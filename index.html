@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Revisão</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <h1>Relatório de Revisão</h1>
+    <form id="relatorioForm">
+        <label for="revisaoStatus" id="labelDecisao">Status da Revisão:</label>
+        <select id="revisaoStatus" name="revisaoStatus" onchange="atualizarDecisao()">
+            <option value="aceita">Revisão Aceita</option>
+            <option value="negada">Revisão Negada</option>
+            <option value="convertida">Revisão Convertida</option>
+        </select>
+
+        <label for="id">ID:</label>
+        <input type="text" id="id" name="id">
+
+        <label for="ticket">Ticket:</label>
+        <input type="text" id="ticket" name="ticket">
+
+        <label for="motivo">Motivo:</label>
+        <input type="text" id="motivo" name="motivo">
+
+        <label for="punicao" id="labelPunicao">Punição:</label>
+        <select id="punicao" name="punicao" onchange="mostrarConversao()">
+            <option value="<@&1218693120183631974>">Advertência Verbal</option>
+            <option value="<@&1218692969973022730>">Advertência 1</option>
+            <option value="<@&1218693038629453975>">Advertência 2</option>
+            <option value="<@&1218692969973022730> <@&1218693038629453975>">Advertência 1 e 2</option>
+            <option value="<@&1218693194796241009>">Banido</option>
+        </select>
+        
+        <div id="decisaoConvertida" style="display:none;"></div>
+
+        
+        </select>
+
+        <label for="discordID" id="decisaoLabel">Decisão por:</label>
+        <input type="text" id="discordID" name="discordID" placeholder="Insira o ID do Discord">
+
+        <button type="button" onclick="copiarRelatorio()">Copiar Relatório</button>
+    </form>
+    <div id="resultadoRelatorio"></div>
+
+    <input type="text" id="data" class="hidden">
+</body>
+</html>

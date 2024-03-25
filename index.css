@@ -1,0 +1,118 @@
+/* Reset básico para remover paddings e margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: linear-gradient(to left, #260938, #050008 50%, #260938 100%);
+    color: #fcfcfc;
+    height: auto;
+    min-height: 100vh;}
+        form {
+            max-width: 500px;
+            margin: auto;
+        }
+        label, input, select, button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px;
+            background-color: #5cb85c;
+            color: rgb(12, 7, 7);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+        .hidden {
+            display: none;
+        }
+
+
+
+h1 {
+    color: #ececec;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#relatorioForm {
+    max-width: 500px;
+    margin: 0 auto;
+    background-image: linear-gradient(to left, #260938, #4e3e57 50%, #260938 100%);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#relatorioForm label {
+    display: block;
+    margin-top: 10px;
+    color: #f5f4f4;
+}
+
+#relatorioForm input[type="text"],
+#relatorioForm select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #030202;
+    box-sizing: border-box;
+}
+
+#relatorioForm button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #3e2e57;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#relatorioForm button:hover {
+    background-color: #8742c0;
+}
+
+#resultadoRelatorio {
+    margin-top: 20px;
+    background: #383737;
+    color: #f5f5f5;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Estilos para elementos ocultos */
+[style*="display:none"] {
+    display: none !important;
+}
+
+
+/* ...resto do CSS... */
+
+.punicao-options {
+    margin-bottom: 10px;
+}
+
+.punicao-options input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+footer {
+    text-align: center;
+    font-size: 20px; /* Tamanho pequeno do texto */
+    margin-top: 20px; /* Espaço acima do rodapé */
+    color: #666; /* Cor cinza para o texto do rodapé */
+}
+
+
